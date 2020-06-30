@@ -1,0 +1,83 @@
+@import 'confiq';
+
+
+//setup as if this code is coming from main.css file in css folder
+// $bg-image: url('../img/showcase.jpg');  
+
+
+
+// General Styles
+
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: black;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+
+h2, h3, h4 {
+    text-transform: uppercase;
+}
+
+img {
+    width: 100%;
+}
+
+
+// header
+
+// #header-home {
+    
+    #particles-js {
+        background: #00111e;
+        color: white;
+        height: 100vh;
+
+        .container{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding: 0 2rem;
+            /* Overlay */
+            // position: absolute;
+            // top: 65px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            // background-color: rgba(0, 0, 0, 0.4);
+      
+      
+            #main-nav ul a {
+                color: white;
+            }
+
+        }    
+
+
+    }
+
+    
+    
+    
+// }
+

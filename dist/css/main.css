@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background: black; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+ul {
+  list-style: none; }
+
+h2, h3, h4 {
+  text-transform: uppercase; }
+
+img {
+  width: 100%; }
+
+#particles-js {
+  background: #00111e;
+  color: white;
+  height: 100vh; }
+  #particles-js .container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    /* Overlay */
+    left: 0;
+    right: 0;
+    bottom: 0; }
+    #particles-js .container #main-nav ul a {
+      color: white; }
