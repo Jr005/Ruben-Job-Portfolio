@@ -1,3 +1,9 @@
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -5,7 +11,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
-  background: black; }
+  background: white; }
 
 a {
   text-decoration: none;
@@ -20,22 +26,47 @@ h2, h3, h4 {
 img {
   width: 100%; }
 
-#particles-js {
-  background: #00111e;
-  color: white;
-  height: 100vh; }
-  #particles-js .container {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
+#logo {
+  width: 70px;
+  height: 70px;
+  color: #fff; }
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  background: none; }
+  #main-nav ul {
+    display: flex; }
+  #main-nav li {
+    padding: 1rem 1.5rem; }
+  #main-nav a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 1s; }
+    #main-nav a:hover {
+      border-color: #0080A7; }
+    #main-nav a.current {
+      border-color: #d9b311; }
+
+#header-home {
+  height: 100vh;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  margin: 0;
+  background: #00111e; }
+  #header-home .header-content {
     text-align: center;
-    justify-content: center;
-    align-items: center;
+    padding-top: 20%;
+    background: none;
+    color: white; }
+  #header-home #particles-js {
+    position: absolute;
     height: 100%;
-    padding: 0 2rem;
-    /* Overlay */
-    left: 0;
-    right: 0;
-    bottom: 0; }
-    #particles-js .container #main-nav ul a {
-      color: white; }
+    background-position: 50% 50%;
+    background: none;
+    z-index: 0; }
