@@ -4,6 +4,96 @@
   margin: auto;
   overflow: hidden; }
 
+.btn-main, .btn-light, .btn-dark {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer; }
+
+.btn-main {
+  color: #333;
+  background-color: #d9b311; }
+
+.btn-light {
+  color: #333;
+  background-color: #0080A7; }
+
+.btn-dark {
+  color: #f4f4f4;
+  background-color: #00111e; }
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover {
+  background-color: #d9b311; }
+
+.bg-dark-blue {
+  background: #ccc;
+  color: white; }
+
+.bg-light-blue {
+  background: #0080A7;
+  color: white; }
+
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase; }
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem; }
+
+.text-center {
+  text-align: center; }
+
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.py-4 {
+  padding: 4rem 0; }
+
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.py-4 {
+  padding: 4rem 0; }
+
+.my-1 {
+  margin: 1rem 0; }
+
+.my-2 {
+  margin: 2rem 0; }
+
+.my-3 {
+  margin: 3rem 0; }
+
+.my-4 {
+  margin: 4rem 0; }
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: #d9b311;
+  display: block;
+  margin: 0 auto 1rem auto; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -78,5 +168,8 @@ img {
       right: 0;
       bottom: 0; }
       #header-home .container .header-content h1 {
-        font-size: 4rem;
-        line-height: 1.2; }
+        font-size: 125px;
+        line-height: .90;
+        font-family: 'Abril Fatface', cursive;
+        text-shadow: 0 0 40px rgba(255, 255, 255, 0.75);
+        margin-bottom: .75rem; }
