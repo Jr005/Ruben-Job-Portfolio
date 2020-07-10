@@ -40,8 +40,7 @@ input[class^='btn-']:hover {
   font-size: 2rem;
   display: block;
   padding-bottom: 0.5rem;
-  text-align: center;
-  font-weight: 100;
+  font-weight: 900;
   text-transform: uppercase; }
 
 .lead {
@@ -99,7 +98,7 @@ input[class^='btn-']:hover {
   padding: 0; }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Rubik', sans-serif;
   line-height: 1.6;
   background: white; }
 
@@ -116,7 +115,7 @@ h2, h3, h4 {
 img {
   width: 100%; }
 
-#logo {
+.white-logo {
   width: 70px;
   height: 70px;
   color: #fff; }
@@ -146,7 +145,8 @@ img {
 #header-home {
   height: 100vh;
   margin: 0;
-  background: #00111e; }
+  background: #00111e;
+  z-index: 1; }
   #header-home .bottom-curve {
     position: absolute;
     bottom: -40px;
@@ -154,6 +154,7 @@ img {
   #header-home #particles-js {
     position: absolute;
     width: 100%;
+    height: 100%;
     top: 0;
     z-index: 0; }
   #header-home .container .header-content {
@@ -175,3 +176,9 @@ img {
       font-family: 'Abril Fatface', cursive;
       text-shadow: 0 0 40px rgba(255, 255, 255, 0.75);
       margin-bottom: .75rem; }
+
+#about-me {
+  z-index: 50;
+  height: 100%; }
+  #about-me .container {
+    display: flex; }
