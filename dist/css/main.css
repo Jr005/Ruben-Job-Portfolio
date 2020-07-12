@@ -62,17 +62,17 @@ input[class^='btn-']:hover {
 .py-4 {
   padding: 4rem 0; }
 
-.py-1 {
-  padding: 1rem 0; }
+.p-1 {
+  padding: 1rem; }
 
-.py-2 {
-  padding: 2rem 0; }
+.p-2 {
+  padding: 2rem; }
 
-.py-3 {
-  padding: 3rem 0; }
+.p-3 {
+  padding: 3rem; }
 
-.py-4 {
-  padding: 4rem 0; }
+.p-4 {
+  padding: 4rem; }
 
 .my-1 {
   margin: 1rem 0; }
@@ -118,14 +118,15 @@ img {
 .white-logo {
   width: 70px;
   height: 70px;
-  color: #fff; }
+  fill: red; }
 
 #main-nav {
   z-index: 20;
   display: flex;
   justify-content: space-between;
   padding-top: 1rem;
-  background: none; }
+  background: none;
+  position: relative; }
   #main-nav ul {
     display: flex; }
   #main-nav li {
@@ -178,7 +179,14 @@ img {
       margin-bottom: .75rem; }
 
 #about-me {
-  z-index: 50;
-  height: 100%; }
+  position: relative; }
   #about-me .container {
     display: flex; }
+    #about-me .container .items .item {
+      max-width: 55%;
+      position: absolute; }
+    #about-me .container .items .item:nth-child(2) {
+      position: absolute;
+      max-width: 40%;
+      right: 0;
+      top: -4rem; }
