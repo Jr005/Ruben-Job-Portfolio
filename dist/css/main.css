@@ -36,6 +36,10 @@ input[class^='btn-']:hover {
   background: #0080A7;
   color: white; }
 
+.bg-dark {
+  background: black;
+  color: white; }
+
 .section-title {
   font-size: 2rem;
   display: block;
@@ -93,6 +97,28 @@ input[class^='btn-']:hover {
   display: block;
   margin: 0 auto 1rem auto; }
 
+.angle-top-right {
+  position: relative;
+  z-index: 1; }
+  .angle-top-right:before, .angle-top-right:after {
+    background: inherit;
+    content: "";
+    display: block;
+    height: 25%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden; }
+  .angle-top-right:before {
+    top: 0;
+    transform: skewY(-1.5deg);
+    transform-origin: 0 100%; }
+  .angle-top-right:after {
+    bottom: 0;
+    transform: skewY(2deg);
+    transform-origin: 0 100%; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -100,7 +126,8 @@ input[class^='btn-']:hover {
 body {
   font-family: 'Rubik', sans-serif;
   line-height: 1.6;
-  background: white; }
+  background: white;
+  margin-bottom: 2rem; }
 
 a {
   text-decoration: none;
@@ -115,10 +142,9 @@ h2, h3, h4 {
 img {
   width: 100%; }
 
-.white-logo {
+#logo {
   width: 70px;
-  height: 70px;
-  fill: red; }
+  height: 70px; }
 
 #main-nav {
   z-index: 20;
@@ -179,14 +205,38 @@ img {
       margin-bottom: .75rem; }
 
 #about-me {
+  margin-top: -3rem;
   position: relative; }
   #about-me .container {
-    display: flex; }
-    #about-me .container .items .item {
-      max-width: 55%;
-      position: absolute; }
-    #about-me .container .items .item:nth-child(2) {
-      position: absolute;
-      max-width: 40%;
-      right: 0;
-      top: -4rem; }
+    display: flex;
+    overflow: visible; }
+    #about-me .container .content-info {
+      flex: 2; }
+    #about-me .container .profile-pic {
+      flex: 1;
+      margin-top: -5rem; }
+
+#capabilities .items {
+  display: flex;
+  justify-content: space-evenly; }
+  #capabilities .items h3 {
+    color: white;
+    text-transform: uppercase; }
+  #capabilities .items .item {
+    flex: 1; }
+    #capabilities .items .item img {
+      height: 10rem;
+      width: auto;
+      display: block;
+      margin: auto;
+      margin-bottom: 2rem;
+      opacity: .40;
+      transition: 1s; }
+    #capabilities .items .item h3 {
+      padding-top: 2rem;
+      transition-duration: .5s; }
+      #capabilities .items .item h3:hover {
+        padding-top: 0rem;
+        transition-duration: .5s; }
+  #capabilities .items .item:hover img {
+    opacity: 1.0; }

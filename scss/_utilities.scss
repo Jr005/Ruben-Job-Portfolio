@@ -57,10 +57,16 @@
       background: $light-blue;
       color: white;
     }
+    
+    &-dark {
+      background: black;
+      color: white;
+    }
   }
 
 
     // Text size
+
 
 
     .section-title {
@@ -71,6 +77,7 @@
         font-weight: 900;
         text-transform: uppercase;
     }
+    
 
     .lead {
         font-size: 1.3rem;
@@ -143,3 +150,50 @@
     margin: 0 auto 1rem auto;
   }
   
+
+  // Angle Top Right
+
+// slanted edges here
+.angle-top-right {
+  // background: #41ade5;
+  position: relative;
+  z-index: 1;
+  
+
+  &:before,
+  &:after {
+    background: inherit;
+    content: "";
+    display: block;
+    height: 25%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden; // for Chrome Windows
+  }
+
+  &:before {
+    top: 0;
+    transform: skewY(-1.5deg);
+    transform-origin: 0 100%;
+  }
+
+  &:after {
+    bottom: 0;
+    transform: skewY(2deg);
+    transform-origin: 0 100%;
+  }
+}
+
+
+
+// // demo code below
+// .angle-top-right {
+//   color: #fff;
+//   font-family: "Fira Sans", sans-serif;
+//   margin: 50px 0;
+//   padding: 20% 20px;
+//   text-align: center;
+// }
+
