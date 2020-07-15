@@ -185,54 +185,100 @@ img {
         }
     }
 
-    // CAPABILITIES
 
-    #capabilities {
+    // SKILLS 
 
-        .items {
-            display: flex;
-            justify-content: space-evenly;
-            // align-items: stretch;
-          
-                h3 {
-                color: white;
-                text-transform: uppercase;
-            }
-           
-            .item {
-                
-                flex: 1;
+    .skill1 {
+        top: 0;
+        left: 0;
+    }
+    .skill2 {
+        top: 0;
+        left: 25%;
+    }
+    .skill3 {
+        top: 0;
+        left: 50%;
+    }
+    .skill4 {
+        top: 0;
+        left: 75%;
+    }
 
-                img {
-                    height: 10rem;
-                    width: auto;
-                    display: block;
-                    margin: auto;
-                    margin-bottom: 2rem;
-                    opacity: .40;
-                    transition: 1s;
+    #home-skills {
+        
+        display: block;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        height: 500px;
+        // margin-bottom: 2rem;
+       
+       
+        .skills-container  {
+            // display: flex;
+            // align-items: center;
+            margin-bottom: 2rem;
 
-                        // &:hover {
-                        //     opacity: 1.0;
-                        // }
-                }
-                
-                h3 {
-                    padding-top: 2rem;
-                    transition-duration: .5s;
 
-                    &:hover {
-                        padding-top: 0rem;
-                    transition-duration: .5s;
 
-                    }
-                }
-            }
-                    .item:hover  img {
-                        opacity: 1.0;
-                    }
+            .skill {
+                padding-top: 5rem;
+                position: absolute;
+                width: 25%;
+                height: 400px;
+                // background: red;
+                margin-bottom: 5rem;
+                // flex
+                display: flex;
+                align-items: center;
+                justify-content: center;
             
+                .content {
+
+                    // flex: 1;
+                    // margin: auto;
+
+                    img {
+                        
+                        height: 12rem;
+                        width: auto;
+                        // display: block;
+                        // margin: auto;
+                        margin-bottom: 2rem;
+                        opacity: .40;
+                        transition: .75s;
+                        // padding-bottom: 2rem;
+                        
+                    }
+                    .text-animation {
+                        position: absolute;
+                        padding-top: 2rem;
+                        transition-duration: .75s;
+                        
+                        h3 {
+                            color: white;
+                            text-transform: uppercase;
+                           
+                        }
+                    }
+                }                
+            }
+                    
+                    .skill:hover .content  img {
+                        opacity: 1.0;
+                        // padding-bottom: 0rem;
+                    }
+                    
+                    .skill:hover .content  .text-animation {
+                        // opacity: 1.0;
+                        padding-top: 0rem;
+                    }
         }
+                   
+
+                    
 
     }
         
+
