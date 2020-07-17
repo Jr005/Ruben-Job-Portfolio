@@ -186,58 +186,62 @@ img {
     }
 
 
-    // SKILLS 
+    // CAPABILITIES
 
-    .skill1 {
+    // SECTION DIVIDERS
+
+    .category1 {
         top: 0;
         left: 0;
     }
-    .skill2 {
+    .category2 {
         top: 0;
         left: 25%;
     }
-    .skill3 {
+    .category3 {
         top: 0;
         left: 50%;
     }
-    .skill4 {
+    .category4 {
         top: 0;
         left: 75%;
     }
 
-    #home-skills {
+
+    #capabilities {
         
         display: block;
         position: relative;
         margin: 0;
         padding: 0;
-        height: 500px;
+        height: 400px;
+        margin-bottom: 10rem;
+        
+       
+        
+        
         // margin-bottom: 2rem;
+        // color: white;
+        // background: url(/img/logo-white-1.svg) center;
        
        
-        .skills-container  {
-            // display: flex;
-            // align-items: center;
-            margin-bottom: 2rem;
+        .capabilities-container  {
 
-
-
-            .skill {
+        
+            .category {
                 padding-top: 5rem;
                 position: absolute;
                 width: 25%;
-                height: 400px;
+                height: 300px;
                 // background: red;
                 margin-bottom: 5rem;
                 // flex
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                
             
                 .content {
-
-                    // flex: 1;
-                    // margin: auto;
 
                     img {
                         
@@ -245,7 +249,7 @@ img {
                         width: auto;
                         // display: block;
                         // margin: auto;
-                        margin-bottom: 2rem;
+                        // margin-bottom: 2rem;
                         opacity: .40;
                         transition: .75s;
                         // padding-bottom: 2rem;
@@ -255,30 +259,35 @@ img {
                         position: absolute;
                         padding-top: 2rem;
                         transition-duration: .75s;
+                        text-align: center;
+                        left: 0;
+                        right: 0;
+                        // background: red;
+                        // margin: auto;
                         
                         h3 {
                             color: white;
                             text-transform: uppercase;
+                            // margin: auto;
                            
                         }
                     }
                 }                
             }
                     
-                    .skill:hover .content  img {
+                    .category:hover .content  img {
                         opacity: 1.0;
                         // padding-bottom: 0rem;
                     }
                     
-                    .skill:hover .content  .text-animation {
+                    .category:hover .content  .text-animation {
                         // opacity: 1.0;
                         padding-top: 0rem;
                     }
         }
-                   
-
-                    
 
     }
         
+
+// SKILLS 
 
