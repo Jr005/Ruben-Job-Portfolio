@@ -233,37 +233,75 @@ img {
   left: 75%; }
 
 #capabilities {
-  display: block;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  height: 400px;
-  margin-bottom: 10rem; }
-  #capabilities .capabilities-container .category {
-    padding-top: 5rem;
-    position: absolute;
-    width: 25%;
-    height: 300px;
-    margin-bottom: 5rem;
+  height: 400px; }
+  #capabilities .capabilities-container {
+    display: flex; }
+    #capabilities .capabilities-container .category {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      #capabilities .capabilities-container .category .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+        #capabilities .capabilities-container .category .content img {
+          position: absolute;
+          top: 30%;
+          height: 12rem;
+          width: auto;
+          display: block;
+          margin: auto;
+          margin-bottom: 4rem;
+          opacity: .40;
+          transition: .75s; }
+        #capabilities .capabilities-container .category .content .text-animation {
+          text-align: center;
+          padding-top: 15rem;
+          transition-duration: .75s;
+          text-align: center;
+          left: 0;
+          right: 0; }
+          #capabilities .capabilities-container .category .content .text-animation h3 {
+            color: white;
+            text-transform: uppercase; }
+    #capabilities .capabilities-container .category:hover .content img {
+      opacity: 1.0;
+      margin-bottom: 1rem; }
+    #capabilities .capabilities-container .category:hover .content .text-animation {
+      padding-top: 10rem; }
+
+#skills .skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  #skills .skills-container .skills-section {
     display: flex;
-    align-items: center;
-    justify-content: center; }
-    #capabilities .capabilities-container .category .content img {
-      height: 12rem;
-      width: auto;
-      opacity: .40;
-      transition: .75s; }
-    #capabilities .capabilities-container .category .content .text-animation {
-      position: absolute;
-      padding-top: 2rem;
-      transition-duration: .75s;
+    flex-direction: column;
+    flex: 1;
+    padding-left: 4rem; }
+    #skills .skills-container .skills-section .skills-list .dot {
+      height: 15px;
+      width: 15px;
+      background-color: #d9b311;
+      border-radius: 50%;
+      display: inline-block;
+      position: relative;
       text-align: center;
-      left: 0;
-      right: 0; }
-      #capabilities .capabilities-container .category .content .text-animation h3 {
-        color: white;
-        text-transform: uppercase; }
-  #capabilities .capabilities-container .category:hover .content img {
-    opacity: 1.0; }
-  #capabilities .capabilities-container .category:hover .content .text-animation {
-    padding-top: 0rem; }
+      /*   Stroke */
+      -webkit-box-shadow: 0px 0px 0px 5px rgba(217, 179, 17, 0.25);
+      -moz-box-shadow: 0px 0px 0px 5px rgba(217, 179, 17, 0.25);
+      box-shadow: 0px 0px 0px 5px rgba(217, 179, 17, 0.25); }
+    #skills .skills-container .skills-section .skills-list .dot:after {
+      content: "";
+      position: absolute;
+      height: 3px;
+      border-bottom: 1px solid #d9b311;
+      border-top: 1px solid #d9b311;
+      bottom: 5px;
+      /*   bottom: 0; */
+      width: 250px;
+      text-align: center; }
