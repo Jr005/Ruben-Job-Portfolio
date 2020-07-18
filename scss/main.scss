@@ -291,3 +291,36 @@ img {
 
 // SKILLS 
 
+#skills {
+
+    height: 400px;
+    
+.dot {
+  
+    height: 15px;
+    width: 15px;
+    background-color: #d9b311;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+  /*   Stroke */
+  -webkit-box-shadow: 0px 0px 0px 5px rgba(217,179,17,0.25);
+  -moz-box-shadow: 0px 0px 0px 5px rgba(217,179,17,0.25);
+  box-shadow: 0px 0px 0px 5px rgba(217,179,17,0.25);
+  }
+  
+  .dot:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    border-bottom: 1px solid #d9b311;
+    border-top: 1px solid #d9b311;
+    bottom: 5px;
+  /*   bottom: 0; */
+    width: 300px;
+    text-align: center;
+  }
+
+}
+
