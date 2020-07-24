@@ -218,69 +218,53 @@
     <!-- portfolio -->
 
 
-    <div id="portfolio-animation" class="py-2">
-        <section class="portfolio section">
-            <div class="container">
-              <div class="top-side">
-                <!-- <h4 class="title">MY WORKS</h4> -->
-                <h2 class="section-title">PORTFOLIO</h2>
-              </div>
-              
-              <div class="filters">
-                <ul>
-                  <li class="active" data-filter="*">All</li>
-                  <li data-filter=".corporate">Corporate</li>
-                  <li data-filter=".personal">Personal</li>
-                  <li data-filter=".agency">Agency</li>
-                  <li data-filter=".portal">Portal</li>
-                </ul>
-              </div>
-              
-              <div class="filters-content">
-                <div class="row grid">
-                  <div class="col-sm-4 all corporate">
-                    <div class="item">
-                      <img src="http://themes.muffingroup.com/betheme/documentation/doc-images/muffin-options/custom-js.png" alt="Work 1">
-                      <div class="p-inner">
-                        <h5>Work 1</h5>
-                        <div class="cat">Corporate</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4 all personal">
-                    <div class="item">
-                      <img src="http://themes.muffingroup.com/betheme/documentation/doc-images/muffin-options/custom-js.png" alt="Work 1">
-                      <div class="p-inner">
-                        <h5>Work 1</h5>
-                        <div class="cat">Personal</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4 all agency">
-                    <div class="item">
-                      <img src="http://themes.muffingroup.com/betheme/documentation/doc-images/muffin-options/custom-js.png" alt="Work 1">
-                      <div class="p-inner">
-                        <h5>Work 1</h5>
-                        <div class="cat">Agency</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4 all portal">
-                    <div class="item">
-                      <img src="http://themes.muffingroup.com/betheme/documentation/doc-images/muffin-options/custom-js.png" alt="Work 1">
-                      <div class="p-inner">
-                        <h5>Work 1</h5>
-                        <div class="cat">Portal</div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-              
-            </div>
-          </section>
-    </div>
+    <div class="filters filter-button-group">
+        <ul><h4>
+          <li class="active" data-filter="*">All</li>
+          <li data-filter=".webdesign">Web Design</li>
+          <li data-filter=".webdev">Web Development</li>
+          <li data-filter=".brand">Brand Identity</li>
+        </h4></ul>
+      </div>
+
+      <div class="content grid">
+
+        <div class="single-content webdesign webdev grid-item">
+              <img class="p2" src="https://static1.squarespace.com/static/56c5196f4c2f85dda57c1d66/59d944df8a02c7abc311e81d/5b71c491b8a045325bf1beba/1534182696851/Screen+Shot+2018-08-13+at+1.48.35+PM.png">
+        </div>
+
+        <div class="single-content brand webdesign grid-item">
+              <img class="p2" src="https://static1.squarespace.com/static/56c5196f4c2f85dda57c1d66/59d944df8a02c7abc311e81d/5b71c491b8a045325bf1beba/1534182696851/Screen+Shot+2018-08-13+at+1.48.35+PM.png">
+        </div>
+
+        <div class="single-content brand grid-item">
+              <img class="p2" src="https://static1.squarespace.com/static/56c5196f4c2f85dda57c1d66/59d944df8a02c7abc311e81d/59da52ba29f187b71a84628e/1507480323521/Portfolio+Template+AMD-06.jpg">
+        </div>
+          
+          <div class="single-content webdesign grid-item">
+              <img class="p2" src="https://static1.squarespace.com/static/56c5196f4c2f85dda57c1d66/59d944df8a02c7abc311e81d/5b71a4cd0ebbe87857c695de/1534181858373/Portfolio+Template+AMD-11.png">
+        </div>
+          
+          <div class="single-content webdesign grid-item">
+              <img class="p2" src="https://static1.squarespace.com/static/56c5196f4c2f85dda57c1d66/59d944df8a02c7abc311e81d/59da3b4bf7e0ab21edcb9aa1/1507480179530/Portfolio+Template+AMD-06.png">
+        </div>
+          
+          <div class="single-content webdesign brand grid-item">
+              <img class="p2"src="https://static1.squarespace.com/static/56c5196f4c2f85dda57c1d66/59d944df8a02c7abc311e81d/59da46128419c28f51bc28b1/1534175868854/Portfolio+Template+AMD-04.png">
+        </div>
+          
+          <div class="single-content webdesign grid-item">
+              <img class="p2" src="https://static1.squarespace.com/static/56c5196f4c2f85dda57c1d66/59d944df8a02c7abc311e81d/5b71c1e221c67c0feefe2a10/1534182546003/Portfolio+Template+AMD-03.png">
+        </div>
+          
+          <div class="single-content webdesign webdev grid-item">
+              <img class="p2"src="https://static1.squarespace.com/static/56c5196f4c2f85dda57c1d66/59d944df8a02c7abc311e81d/5b71c491b8a045325bf1beba/1534182696851/Screen+Shot+2018-08-13+at+1.48.35+PM.png">
+        </div>
+          
+      
+      </div>
+      
+
 
 
 
@@ -299,11 +283,11 @@
 
     
     <!-- Jquery Portoflio CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 
     <!-- Portoflio CDN -->
-    <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
     
   <!-- Local JS File -->

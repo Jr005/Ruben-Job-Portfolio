@@ -332,69 +332,61 @@ img {
         width: 250px;
         text-align: center; }
 
-#portfolio-animation .section {
-  padding: 30px 0;
-  color: #333; }
-  #portfolio-animation .section .top-side {
-    text-align: center; }
-    #portfolio-animation .section .top-side .title {
-      font-weight: 500;
-      font-size: 15px;
-      display: inline-block; }
-      #portfolio-animation .section .top-side .title:after {
-        content: "";
-        display: block;
-        width: 50%;
-        border-bottom: 1px solid #494949;
-        margin: 8px auto; }
-    #portfolio-animation .section .top-side h2 {
-      font-weight: 700; }
+.brand {
+  text-align: center; }
+  .brand img {
+    width: 50px; }
 
-#portfolio-animation .section.portfolio .filters {
-  text-align: center;
-  margin-top: 50px; }
-  #portfolio-animation .section.portfolio .filters ul {
-    padding: 0; }
-    #portfolio-animation .section.portfolio .filters ul li {
-      list-style: none;
-      display: inline-block;
-      padding: 20px 30px;
-      cursor: pointer;
-      position: relative; }
-      #portfolio-animation .section.portfolio .filters ul li:after {
-        content: "";
-        display: block;
-        width: calc(0% - 60px);
-        position: absolute;
-        height: 2px;
-        background: #333;
-        transition: width 350ms ease-out; }
-      #portfolio-animation .section.portfolio .filters ul li:hover:after {
-        width: calc(100% - 60px);
-        transition: width 350ms ease-out; }
-    #portfolio-animation .section.portfolio .filters ul li.active:after {
-      width: calc(100% - 60px); }
+.p1:hover {
+  opacity: .3;
+  cursor: pointer; }
 
-#portfolio-animation .section.portfolio .filters-content {
-  margin-top: 50px; }
-  #portfolio-animation .section.portfolio .filters-content .show {
-    opacity: 1;
-    visibility: visible;
-    transition: all 350ms; }
-  #portfolio-animation .section.portfolio .filters-content .hide {
-    opacity: 0;
-    visibility: hidden;
-    transition: all 350ms; }
-  #portfolio-animation .section.portfolio .filters-content .item {
-    text-align: center;
-    cursor: pointer;
-    margin-bottom: 30px; }
-    #portfolio-animation .section.portfolio .filters-content .item .p-inner {
-      padding: 20px 30px;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
-      #portfolio-animation .section.portfolio .filters-content .item .p-inner h5 {
-        font-size: 15px; }
-      #portfolio-animation .section.portfolio .filters-content .item .p-inner .cat {
-        font-size: 13px; }
-    #portfolio-animation .section.portfolio .filters-content .item img {
-      width: 100%; }
+.p2:hover {
+  opacity: .3;
+  cursor: pointer; }
+
+h4 {
+  color: grey;
+  font-size: 24px;
+  font-weight: 400; }
+
+#portfolio p {
+  color: grey;
+  font-size: 12px;
+  font-weight: 200; }
+
+.content {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px;
+  text-align: center; }
+
+.single-content img {
+  width: 290px;
+  height: 100%;
+  margin: 10px; }
+
+.filters {
+  width: 100%;
+  text-align: center; }
+
+ul {
+  list-style: none;
+  padding: 20px 0; }
+
+li {
+  display: inline;
+  padding: 10px 25px;
+  font-size: 14px;
+  color: #636363;
+  font-weight: 400;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: .2em; }
+  li:hover {
+    color: #a6a6a6; }
+
+li.active {
+  color: #ccc;
+  border: 1px solid #ccc;
+  border-radius: 15px; }
