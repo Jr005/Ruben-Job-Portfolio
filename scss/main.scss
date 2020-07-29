@@ -1,389 +1,340 @@
-@import 'confiq';
-@import 'utilities';
+@import "confiq";
+@import "utilities";
 // @import 'bootstrap-copied-code';
 
-
 //setup as if this code is coming from main.css file in css folder
-// $bg-image: url('../img/showcase.jpg');  
-
-
+// $bg-image: url('../img/showcase.jpg');
 
 // General Styles
 
 * {
-    margin: 0;
-    padding: 0;
-    }
-
-
-body {
-    font-family: 'Rubik', sans-serif;
-    line-height: 1.6;
-    background: white;
-    margin-bottom: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1.6;
+  background: white;
+  margin-bottom: 2rem;
+}
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
-
-h2, h3, h4 {
-    text-transform: uppercase;
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
-
 
 // header
 
-
-
 // Logo
 #logo {
-    width: 70px;
-    height: 70px;
-    // fill: red;
+  width: 70px;
+  height: 70px;
+  // fill: red;
 }
-
 
 // Main Nav
 #main-nav {
-    z-index: 20;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  background: none;
+  position: relative;
+
+  ul {
     display: flex;
-    justify-content: space-between;
-    padding-top: 1rem;
-    background: none;
-    position: relative;
+  }
 
+  li {
+    padding: 1rem 1.5rem;
+  }
 
-    ul {
-        display: flex;
-    }
-    
-    li {
-        padding: 1rem 1.5rem;
+  a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    // CSS Below is For Border Bottom Hover Effect
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 1s;
 
-    }
-
-    a {
-        text-decoration: none;
-        color: #fff;
-        text-transform: uppercase;
-        // CSS Below is For Border Bottom Hover Effect
-        border-bottom: 3px transparent solid;
-        padding-bottom: 0.5rem;
-        transition: border-color 1s;
-
-        &:hover {
-            border-color: $light-blue;
-        }
-        
-        &.current {
-            border-color: $yellow-color;
-        }
-
+    &:hover {
+      border-color: $light-blue;
     }
 
+    &.current {
+      border-color: $yellow-color;
+    }
+  }
 }
 
+// #header
 
+#header-home {
+  height: 100vh;
+  margin: 0;
+  background: $dark-blue;
+  z-index: 1;
+  // position: relative;
+  // background-image: image("/dist/img/Ellipse 1.svg");
 
+  .bottom-curve {
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+  }
 
-    // #header 
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    // background: $dark-blue;
+    top: 0;
+    z-index: 0;
+  }
 
-    
-    #header-home {
-            height: 100vh;
-            margin:0;
-            background: $dark-blue;
-            z-index: 1;
-            // position: relative;
-            // background-image: image("/dist/img/Ellipse 1.svg");
+  .container {
+    // z-index: 2;
 
-        .bottom-curve {
-            position: absolute;
-            bottom: -40px;
-            width: 100%;
-            
-        }
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      // padding: 0 2rem;
+      position: absolute;
+      color: white;
+      text-align: center;
+      // padding-top: 20%;
+      left: 0;
+      right: 0;
+      bottom: 0;
 
-        #particles-js {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            // background: $dark-blue;
-            top: 0;
-            z-index: 0;
-        }
+      h1 {
+        font-size: 125px;
+        line-height: 0.9;
+        font-family: "Abril Fatface", cursive;
 
-        .container {
-            // z-index: 2;
+        // text-shadow:  0 0 10px #fff ;
 
-                .header-content{
-                    display: flex;
-                    flex-direction: column;
-                    text-align: center;
-                    justify-content: center;
-                    align-items: center;
-                    height: 100%;
-                    // padding: 0 2rem;
-                    position: absolute;
-                    color: white;
-                    text-align: center;
-                    // padding-top: 20%;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                
-                    h1 {
-                        font-size: 125px;
-                        line-height: .90;
-                        font-family: 'Abril Fatface', cursive;
+        text-shadow: 0 0 40px rgba(255, 255, 255, 0.75);
+        // text-shadow: 0 0 5px #fff, 0 0 15px;
+        // #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 35px #fff;
+        margin-bottom: 0.75rem;
+      }
+    }
+  }
+}
 
-                        // text-shadow:  0 0 10px #fff ;
-                        
-                        text-shadow: 0 0 40px rgba(255,255,255, .75);
-                        // text-shadow: 0 0 5px #fff, 0 0 15px;
-                        // #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 35px #fff;
-                        margin-bottom: .75rem;
-                    }
-                }    
+// About Me
 
-        }
+#about-me {
+  margin-top: -3rem;
+  position: relative;
+  margin-bottom: 5rem;
 
-    }   
-    
+  .container {
+    display: flex;
+    overflow: visible;
 
-
-    // About Me
-
-    #about-me {
-        margin-top: -3rem;
-        position: relative;
-        margin-bottom: 5rem;
-        
-        .container {
-            display: flex;
-            overflow: visible;
-
-            .content-info {
-                flex: 2;
-            }
-
-            .profile-pic {
-                flex: 1;
-                margin-top: -5rem;
-
-            }
-        }
+    .content-info {
+      flex: 2;
     }
 
-
-    // CAPABILITIES
-
-    // SECTION DIVIDERS
-
-    .category1 {
-        top: 0;
-        left: 0;
+    .profile-pic {
+      flex: 1;
+      margin-top: -5rem;
     }
-    .category2 {
-        top: 0;
-        left: 25%;
-    }
-    .category3 {
-        top: 0;
-        left: 50%;
-    }
-    .category4 {
-        top: 0;
-        left: 75%;
-    }
+  }
+}
 
+// CAPABILITIES
 
-    #capabilities {
-        
-        // display: block;
-        // position: relative;
-        // margin: 0;
-        // padding: 0;
-        height: 400px;
-        margin-bottom: 4.5rem;
-        
-       
-       
-        .capabilities-container  {
-            
-            display: flex;
-            // flex: 1;
-        
-            .category {
-                display: flex;
-                flex-direction: column;
-                flex: 1;
-                // padding-top: 8rem;
-                // position: absolute;
-                // width: 25%;
-                // height: 300px;
-                // background: red;
-                // margin-bottom: 5rem;
-                
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                
-            
-                .content {
-                    display: flex;
-                    flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                
-                   
+// SECTION DIVIDERS
 
-                    img {
-                        position:absolute;
-                        top:30%;
-                        height: 12rem;
-                        width: auto;
-                        display: block;
-                        margin: auto;
-                        margin-bottom: 4rem;
-                        opacity: .40;
-                        transition: .75s;
-                        // padding-bottom: 4rem;
-                        
-                    }
-                    .text-animation {
-                        // position: absolute;
-                        text-align: center;
-                        padding-top: 15rem;
-                        transition-duration: .75s;
-                        text-align: center;
-                        left: 0;
-                        right: 0;
-                        // background: red;
-                        // margin: auto;
-                        
-                        h3 {
-                            color: white;
-                            text-transform: uppercase;
-                            // margin: auto;
-                           
-                        }
-                    }
-                }                
-            }
-                    
-                    .category:hover .content  img {
-                        opacity: 1.0;
-                        margin-bottom: 1rem;
-                        // padding-bottom: 0rem;
-                        // padding-bottom: 0rem;
-                    }
-                    
-                    .category:hover .content  .text-animation {
-                        // opacity: 1.0;
-                        padding-top: 10rem;
-                    }
-        }
+.category1 {
+  top: 0;
+  left: 0;
+}
+.category2 {
+  top: 0;
+  left: 25%;
+}
+.category3 {
+  top: 0;
+  left: 50%;
+}
+.category4 {
+  top: 0;
+  left: 75%;
+}
 
-    }
-        
+#capabilities {
+  // display: block;
+  // position: relative;
+  // margin: 0;
+  // padding: 0;
+  height: 400px;
+  margin-bottom: 4.5rem;
 
-// SKILLS 
+  .capabilities-container {
+    display: flex;
+    // flex: 1;
 
-#skills {
+    .category {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      // padding-top: 8rem;
+      // position: absolute;
+      // width: 25%;
+      // height: 300px;
+      // background: red;
+      // margin-bottom: 5rem;
 
-    // height: 400px;
-    margin-bottom: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-    .skills-container {
-
+      .content {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
 
-        .skills-section {
-            display: flex;
-            flex-direction: column;
-            flex: 1;
-            // text-align: center;
-            padding-left: 4rem;
-            
-
-            
-            .skills-list {
-                // align-self: center;
-                // align-items: center;
-               
-                .dot {
-                
-                    height: 15px;
-                    width: 15px;
-                    background-color: #d9b311;
-                    border-radius: 50%;
-                    display: inline-block;
-                    position: relative;
-                    text-align: center;
-                    /*   Stroke */
-                    -webkit-box-shadow: 0px 0px 0px 5px rgba(217,179,17,0.25);
-                    -moz-box-shadow: 0px 0px 0px 5px rgba(217,179,17,0.25);
-                    box-shadow: 0px 0px 0px 5px rgba(217,179,17,0.25);
-                
-            
-                }
-                .dot:after {
-                content: "";
-                position: absolute;
-                height: 3px;
-                border-bottom: 1px solid #d9b311;
-                border-top: 1px solid #d9b311;
-                bottom: 5px;
-                /*   bottom: 0; */
-                width: 250px;
-                text-align: center;
-                }
-            }
-
-    
+        img {
+          position: absolute;
+          top: 30%;
+          height: 12rem;
+          width: auto;
+          display: block;
+          margin: auto;
+          margin-bottom: 4rem;
+          opacity: 0.4;
+          transition: 0.75s;
+          // padding-bottom: 4rem;
         }
-    }
-  
+        .text-animation {
+          // position: absolute;
+          text-align: center;
+          padding-top: 15rem;
+          transition-duration: 0.75s;
+          text-align: center;
+          left: 0;
+          right: 0;
+          // background: red;
+          // margin: auto;
 
+          h3 {
+            color: white;
+            text-transform: uppercase;
+            // margin: auto;
+          }
+        }
+      }
+    }
+
+    .category:hover .content img {
+      opacity: 1;
+      margin-bottom: 1rem;
+      // padding-bottom: 0rem;
+      // padding-bottom: 0rem;
+    }
+
+    .category:hover .content .text-animation {
+      // opacity: 1.0;
+      padding-top: 10rem;
+    }
+  }
 }
 
+// SKILLS
 
+#skills {
+  // height: 400px;
+  margin-bottom: 5rem;
+
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .skills-section {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      // text-align: center;
+      padding-left: 4rem;
+
+      .skills-list {
+        // align-self: center;
+        // align-items: center;
+
+        .dot {
+          height: 15px;
+          width: 15px;
+          background-color: #d9b311;
+          border-radius: 50%;
+          display: inline-block;
+          position: relative;
+          text-align: center;
+          /*   Stroke */
+          -webkit-box-shadow: 0px 0px 0px 5px rgba(217, 179, 17, 0.25);
+          -moz-box-shadow: 0px 0px 0px 5px rgba(217, 179, 17, 0.25);
+          box-shadow: 0px 0px 0px 5px rgba(217, 179, 17, 0.25);
+        }
+        .dot:after {
+          content: "";
+          position: absolute;
+          height: 3px;
+          border-bottom: 1px solid #d9b311;
+          border-top: 1px solid #d9b311;
+          bottom: 5px;
+          /*   bottom: 0; */
+          width: 250px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
 
 // PORTOFLIO
 
-
 .brand {
-	text-align: center;
-	img {
-		width: 50px;
-	}
+  text-align: center;
+  img {
+    width: 50px;
+  }
 }
 .p1 {
-	&:hover {
-		opacity: .3;
-		cursor: pointer;
-	}
+  &:hover {
+    opacity: 0.3;
+    cursor: pointer;
+  }
 }
 .p2 {
-	&:hover {
-		opacity: .3;
-		cursor: pointer;
-	}
+  &:hover {
+    opacity: 0.3;
+    cursor: pointer;
+  }
 }
 // h4 {
 // 	color: grey;
@@ -391,91 +342,132 @@ img {
 // 	font-weight: 400;
 // }
 #portfolio {
-	p {
-		color: grey;
-		font-size: 12px;
-		font-weight: 200;
-	}
+  p {
+    color: grey;
+    font-size: 12px;
+    font-weight: 200;
+  }
 }
 .content {
-	width: 100%;
-	margin: 0 auto;
-	padding: 0px;
-	text-align: center;
-    
-    // .lightbox {
-    .single-content {
-       
-            img {
-                width: 290px;
-                height: 100%;
-                margin: 10px;
-            }
-    
-        
-    }
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px;
+  text-align: center;
 
-    
+  // .lightbox {
+  .single-content {
+    img {
+      width: 290px;
+      height: 100%;
+      margin: 10px;
+    }
+  }
 }
 
 .filters {
-    width: 100%;
-    text-align: center;
-    ul {
-        list-style: none;
-        padding: 20px 0;
+  width: 100%;
+  text-align: center;
+  ul {
+    list-style: none;
+    padding: 20px 0;
+  }
+  li {
+    display: inline;
+    padding: 10px 25px;
+    font-size: 14px;
+    color: #636363;
+    font-weight: 400;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    &:hover {
+      color: #a6a6a6;
     }
-    li {
-        display: inline;
-        padding: 10px 25px;
-        font-size: 14px;
-        color: #636363;
-        font-weight: 400;
-        cursor: pointer;
-        text-transform: uppercase;
-        letter-spacing: .2em;
-        &:hover {
-            color: #a6a6a6;
-        }
-    }
-    li.active {
-        color: #ccc;
-        border: 1px solid #ccc;
-        border-radius: 15px;
-    }
+  }
+  li.active {
+    color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+  }
 }
-
-
 
 /** LIGHTBOX MARKUP **/
 
 .lightbox {
-	/** Default lightbox to hidden */
-	display: none;
+  /** Default lightbox to hidden */
+  display: none;
 
-	/** Position and style */
-	position: fixed;
-	z-index: 999;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	top: 0;
-	left: 0;
-	background: rgba(0,0,0,0.8);
+  /** Position and style */
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .lightbox img {
-	/** Pad the lightbox image */
-	max-width: 650px;
-	max-height: 100%;
-    margin-top: 2%;
-    
+  /** Pad the lightbox image */
+  max-width: 650px;
+  max-height: 100%;
+  margin-top: 2%;
 }
 
 .lightbox:target {
-	/** Remove default browser outline */
-	outline: none;
+  /** Remove default browser outline */
+  outline: none;
 
-	/** Unhide lightbox **/
-	display: block;
+  /** Unhide lightbox **/
+  display: block;
+}
+
+// ================== FLIP CARD ======================
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
 }
