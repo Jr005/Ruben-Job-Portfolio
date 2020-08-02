@@ -1,164 +1,152 @@
 .container {
-    max-width: $website-width;
-    padding: 0 1.5rem;
-    margin: auto;
-    overflow: hidden;
+  max-width: $website-width;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
 }
-
-
 
 // Buttons
 
 // All Buttons will share these styles
 %btn-shared {
-    display: inline-block;
-    padding: 0.8rem 2rem;
-    transition: all 0.5s;
-    border: none;
-    cursor: pointer;
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
 }
 
-    .btn {
-        &-main {
-            @extend %btn-shared; // Brings styles from BTN Shared
-            color: #333;
-            background-color: $yellow-color;
-        }
-
-        &-light {
-            @extend %btn-shared; // Brings styles from BTN Shared
-            color: #333;
-            background-color: $light-blue;
-        }
-
-        &-dark {
-            @extend %btn-shared; // Brings styles from BTN Shared
-            color: #f4f4f4;
-            background-color: $dark-blue;
-        }
-}
-
-    // This will effect anything with "btn-", Anchor links, & input 
-    button[class^='btn-']:hover,
-    a[class^='btn-']:hover,
-    input[class^='btn-']:hover {
+.btn {
+  &-main {
+    @extend %btn-shared; // Brings styles from BTN Shared
+    color: #333;
     background-color: $yellow-color;
-    }
+  }
 
+  &-light {
+    @extend %btn-shared; // Brings styles from BTN Shared
+    color: #333;
+    background-color: $light-blue;
+  }
+
+  &-dark {
+    @extend %btn-shared; // Brings styles from BTN Shared
+    color: #f4f4f4;
+    background-color: $dark-blue;
+  }
+}
+
+// This will effect anything with "btn-", Anchor links, & input
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background-color: $yellow-color;
+}
 
 // Backgrounds
 .bg {
-    &-dark-blue {
-      background: $medium-color;
-      color: white;
-    }
-    
-    &-light-blue {
-      background: $light-blue;
-      color: white;
-    }
-    
-    &-dark-02 {
-      background: black;
-      color: white;
-    }
+  &-dark-blue {
+    background: $medium-color;
+    color: white;
   }
 
+  &-light-blue {
+    background: $light-blue;
+    color: white;
+  }
 
-    // Text / Font  Size
+  &-dark-02 {
+    background: black;
+    color: white;
+  }
+}
 
+// Text / Font  Size
 
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  // text-align: center;
+  font-weight: 900;
+  text-transform: uppercase;
+}
 
-    .section-title {
-        font-size: 2rem;
-        display: block;
-        padding-bottom: 0.5rem;
-        // text-align: center;
-        font-weight: 900;
-        text-transform: uppercase;
-    }
-    
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
 
-    .lead {
-        font-size: 1.3rem;
-        margin-bottom: 2rem;
-    }
-
-    .text-center {
-        text-align: center;
-    }
-
+.text-center {
+  text-align: center;
+}
 
 // Padding - Up & Down Only
 .py {
-    &-1 {
-      padding: 1rem 0;
-    }
-    &-2 {
-      padding: 2rem 0;
-    }
-    &-3 {
-      padding: 3rem 0;
-    }
-    &-4 {
-      padding: 4rem 0;
-    }
+  &-1 {
+    padding: 1rem 0;
   }
+  &-2 {
+    padding: 2rem 0;
+  }
+  &-3 {
+    padding: 3rem 0;
+  }
+  &-4 {
+    padding: 4rem 0;
+  }
+}
 
 //   All Around Padding
 
 .p {
-    &-1 {
-      padding: 1rem ;
-    }
-    &-2 {
-      padding: 2rem ;
-    }
-    &-3 {
-      padding: 3rem ;
-    }
-    &-4 {
-      padding: 4rem ;
-    }
+  &-1 {
+    padding: 1rem;
   }
-  
-  // Margin - Up & Down ONly
-  .my {
-    &-1 {
-      margin: 1rem 0;
-    }
-    &-2 {
-      margin: 2rem 0;
-    }
-    &-3 {
-      margin: 3rem 0;
-    }
-    &-4 {
-      margin: 4rem 0;
-    }
+  &-2 {
+    padding: 2rem;
   }
+  &-3 {
+    padding: 3rem;
+  }
+  &-4 {
+    padding: 4rem;
+  }
+}
 
+// Margin - Up & Down ONly
+.my {
+  &-1 {
+    margin: 1rem 0;
+  }
+  &-2 {
+    margin: 2rem 0;
+  }
+  &-3 {
+    margin: 3rem 0;
+  }
+  &-4 {
+    margin: 4rem 0;
+  }
+}
 
 //   Underline For Text
 
-
 .bottom-line {
-    height: 2px;
-    width: 3rem;
-    background: $yellow-color;
-    display: block;
-    margin: 0 auto 1rem auto;
-  }
-  
+  height: 2px;
+  width: 3rem;
+  background: $yellow-color;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
 
-  // Angle Top Right
+// Angle Top Right
 
 // slanted edges here
 .angle-top-right {
   // background: #41ade5;
   position: relative;
   z-index: 1;
-  
 
   &:before,
   &:after {
@@ -186,14 +174,13 @@
   }
 }
 
-  // Angle Left
+// Angle Left
 
 // slanted edges here
 .angle-left {
   // background: #41ade5;
   position: relative;
   z-index: 1;
-  
 
   &:before,
   &:after {
@@ -221,8 +208,6 @@
   }
 }
 
-
-
 // // demo code below
 // .angle-top-right {
 //   color: #fff;
@@ -231,4 +216,3 @@
 //   padding: 20% 20px;
 //   text-align: center;
 // }
-
