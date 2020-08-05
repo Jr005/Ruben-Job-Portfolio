@@ -54,6 +54,9 @@ input[class^="btn-"]:hover {
 .text-center {
   text-align: center; }
 
+.text-white {
+  color: white; }
+
 .py-1 {
   padding: 1rem 0; }
 
