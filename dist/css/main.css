@@ -403,22 +403,29 @@ img {
 
 .lightbox img {
   /** Pad the lightbox image */
-  max-width: 650px;
-  max-height: 100%;
-  margin-top: 2%; }
+  width: 100%;
+  display: block; }
 
-.lightbox .image-button-container {
-  position: relative;
+.image-button-container {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  overflow: auto;
+  height: 100%;
+  position: relative; }
+
+.lightbox .button-text-container p {
+  color: white;
+  display: block;
+  position: relative; }
+
+.lightbox .button-text-container .buttons-container {
   display: flex;
-  justify-content: center; }
-  .lightbox .image-button-container .buttons-container {
-    position: absolute;
-    bottom: 40px;
-    display: flex;
-    justify-content: center; }
-    .lightbox .image-button-container .buttons-container .btn-dark {
-      margin: 0 1rem;
-      border: 3px solid white; }
+  justify-content: center;
+  position: relative; }
+  .lightbox .button-text-container .buttons-container .btn-dark {
+    margin: 0 1rem;
+    border: 3px solid white; }
 
 .lightbox:target {
   /** Remove default browser outline */
