@@ -353,8 +353,6 @@ img {
   margin: 0 auto;
   padding: 0px;
   text-align: center;
-  display: flex;
-  justify-content: center;
 
   // .lightbox {
   .single-content {
@@ -412,10 +410,13 @@ img {
 
 .lightbox-websites img {
   /** Pad the lightbox image */
-  // width: 100%;
+  width: auto;
+
   display: block;
-  // max-height: 100%;
+  max-height: 600px;
+  max-width: 600px;
   // margin-top: 2%;
+  margin: 0 auto;
 }
 
 .image-button-container {

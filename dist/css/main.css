@@ -363,9 +363,7 @@ img {
   width: 100%;
   margin: 0 auto;
   padding: 0px;
-  text-align: center;
-  display: flex;
-  justify-content: center; }
+  text-align: center; }
   .content .single-content img {
     width: 290px;
     height: 100%;
@@ -409,7 +407,11 @@ img {
 
 .lightbox-websites img {
   /** Pad the lightbox image */
-  display: block; }
+  width: auto;
+  display: block;
+  max-height: 600px;
+  max-width: 600px;
+  margin: 0 auto; }
 
 .image-button-container {
   width: 40%;
