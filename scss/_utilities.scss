@@ -45,6 +45,10 @@ input[class^="btn-"]:hover {
 
 // Backgrounds
 .bg {
+  &-white {
+    background: white;
+    color: black;
+  }
   &-dark-blue {
     background: $medium-color;
     color: white;

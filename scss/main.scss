@@ -391,7 +391,73 @@ img {
   }
 }
 
-/** LIGHTBOX MARKUP **/
+/** LIGHTBOX WEBSITES **/
+
+.lightbox-websites {
+  /** Default lightbox to hidden */
+  display: none;
+
+  /** Position and style */
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox-websites img {
+  /** Pad the lightbox image */
+  // width: 100%;
+  display: block;
+  // max-height: 100%;
+  // margin-top: 2%;
+}
+
+.image-button-container {
+  // position: absolute;
+  width: 40%;
+  margin: 2% auto;
+  display: block;
+  overflow: auto;
+  max-height: 80%;
+  position: relative;
+}
+
+.lightbox-websites .button-text-container {
+  p {
+    // width: 40%;
+    // color: white;
+    display: block;
+    position: relative;
+  }
+
+  .buttons-container {
+    // position: absolute;
+    // bottom: 40px;
+    display: flex;
+    justify-content: center;
+    // display: block;
+    // position: relative;
+
+    .btn-dark {
+      margin: 0 1rem;
+      border: 3px solid white;
+    }
+  }
+}
+
+.lightbox-websites:target {
+  /** Remove default browser outline */
+  outline: none;
+
+  /** Unhide lightbox **/
+  display: block;
+}
+
+// REGULAR LIGHTBOX FOR OTHER PORTFOLIO
 
 .lightbox {
   /** Default lightbox to hidden */
@@ -410,45 +476,20 @@ img {
 
 .lightbox img {
   /** Pad the lightbox image */
-  width: 100%;
-  display: block;
-  // max-height: 100%;
-  // margin-top: 2%;
+  max-width: 650px;
+  max-height: 100%;
+  margin-top: 2%;
 }
-
-.image-button-container {
-  // position: absolute;
-  width: 50%;
-  margin: 0 auto;
-  display: block;
-  overflow: auto;
-  height: 100%;
+.lightbox .image-button-container {
   position: relative;
-}
-
-.lightbox .button-text-container {
-  // position: relative;
-  // display: flex;
-  // justify-content: center;
-  // flex-direction: column;
-  // left: 0;
-  // right: 0;
-  // margin: auto;
-
-  p {
-    // width: 40%;
-    color: white;
-    display: block;
-    position: relative;
-  }
+  display: flex;
+  justify-content: center;
 
   .buttons-container {
-    // position: absolute;
-    // bottom: 40px;
+    position: absolute;
+    bottom: 40px;
     display: flex;
     justify-content: center;
-    // display: block;
-    position: relative;
 
     .btn-dark {
       margin: 0 1rem;
