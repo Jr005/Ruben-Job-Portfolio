@@ -363,7 +363,9 @@ img {
   width: 100%;
   margin: 0 auto;
   padding: 0px;
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  justify-content: center; }
   .content .single-content img {
     width: 290px;
     height: 100%;
@@ -434,11 +436,12 @@ img {
   /** Unhide lightbox **/
   display: block; }
 
+/** LIGHTBOX MARKUP **/
 .lightbox {
   /** Default lightbox to hidden */
   display: none;
   /** Position and style */
-  position: fixed;
+  position: fixed !important;
   z-index: 999;
   width: 100%;
   height: 100%;
@@ -448,23 +451,10 @@ img {
   background: rgba(0, 0, 0, 0.8); }
 
 .lightbox img {
-  /** Pad the lightbox image */
-  max-width: 650px;
-  max-height: 100%;
+  width: 50%;
+  max-width: 800px;
+  height: auto;
   margin-top: 2%; }
-
-.lightbox .image-button-container {
-  position: relative;
-  display: flex;
-  justify-content: center; }
-  .lightbox .image-button-container .buttons-container {
-    position: absolute;
-    bottom: 40px;
-    display: flex;
-    justify-content: center; }
-    .lightbox .image-button-container .buttons-container .btn-dark {
-      margin: 0 1rem;
-      border: 3px solid white; }
 
 .lightbox:target {
   /** Remove default browser outline */
