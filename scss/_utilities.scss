@@ -148,10 +148,11 @@ input[class^="btn-"]:hover {
   margin: 0 auto 1rem auto;
 }
 
-// Angle Top Right
-
 // slanted edges here
-.angle-top-right {
+
+// Angle Top & Bottom Right
+
+.angle-top-bottom-right {
   // background: #41ade5;
   position: relative;
   z-index: 1;
@@ -180,6 +181,39 @@ input[class^="btn-"]:hover {
     transform: skewY(3deg);
     transform-origin: 0 100%;
   }
+}
+
+// Angle Top Right Only
+
+.angle-top-right {
+  // background: #41ade5;
+  position: relative;
+  z-index: 1;
+
+  &:before,
+  &:after {
+    background: inherit;
+    content: "";
+    display: block;
+    height: 25%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden; // for Chrome Windows
+  }
+
+  &:before {
+    top: 0;
+    transform: skewY(-3deg);
+    transform-origin: 0 100%;
+  }
+
+  // &:after {
+  //   bottom: 0;
+  //   transform: skewY(3deg);
+  //   transform-origin: 0 100%;
+  // }
 }
 
 // Angle Left

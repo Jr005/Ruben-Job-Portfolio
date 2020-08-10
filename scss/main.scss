@@ -16,7 +16,7 @@ body {
   font-family: "Rubik", sans-serif;
   line-height: 1.6;
   background: white;
-  margin-bottom: 2rem;
+  // margin-bottom: 2rem;
 }
 
 a {
@@ -492,4 +492,23 @@ img {
 
   /** Unhide lightbox **/
   display: block;
+}
+
+// BOTTOM FOOTER
+
+#bottom-footer {
+  height: 250px;
+  padding-top: 2rem;
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    // bottom: 0;
+    a {
+      color: white;
+    }
+  }
 }

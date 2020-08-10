@@ -104,6 +104,28 @@ input[class^="btn-"]:hover {
   display: block;
   margin: 0 auto 1rem auto; }
 
+.angle-top-bottom-right {
+  position: relative;
+  z-index: 1; }
+  .angle-top-bottom-right:before, .angle-top-bottom-right:after {
+    background: inherit;
+    content: "";
+    display: block;
+    height: 25%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden; }
+  .angle-top-bottom-right:before {
+    top: 0;
+    transform: skewY(-3deg);
+    transform-origin: 0 100%; }
+  .angle-top-bottom-right:after {
+    bottom: 0;
+    transform: skewY(3deg);
+    transform-origin: 0 100%; }
+
 .angle-top-right {
   position: relative;
   z-index: 1; }
@@ -120,10 +142,6 @@ input[class^="btn-"]:hover {
   .angle-top-right:before {
     top: 0;
     transform: skewY(-3deg);
-    transform-origin: 0 100%; }
-  .angle-top-right:after {
-    bottom: 0;
-    transform: skewY(3deg);
     transform-origin: 0 100%; }
 
 .angle-left {
@@ -155,8 +173,7 @@ input[class^="btn-"]:hover {
 body {
   font-family: "Rubik", sans-serif;
   line-height: 1.6;
-  background: white;
-  margin-bottom: 2rem; }
+  background: white; }
 
 a {
   text-decoration: none;
@@ -463,3 +480,15 @@ img {
   outline: none;
   /** Unhide lightbox **/
   display: block; }
+
+#bottom-footer {
+  height: 250px;
+  padding-top: 2rem; }
+  #bottom-footer .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; }
+    #bottom-footer .contact-info a {
+      color: white; }
