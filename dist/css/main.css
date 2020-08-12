@@ -53,7 +53,7 @@ input[class^="btn-"]:hover {
 
 .lead {
   font-size: 1.3rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 1rem; }
 
 .text-center {
   text-align: center; }
@@ -138,7 +138,8 @@ input[class^="btn-"]:hover {
     position: absolute;
     right: 0;
     z-index: -1;
-    -webkit-backface-visibility: hidden; }
+    -webkit-backface-visibility: hidden;
+    padding-bottom: 2rem; }
   .angle-top-right:before {
     top: 0;
     transform: skewY(-3deg);
@@ -261,38 +262,29 @@ img {
     overflow: visible; }
     #about-me .container .content-info {
       flex: 2; }
+      #about-me .container .content-info h1 {
+        color: #0080A7; }
+      #about-me .container .content-info .social-icons {
+        font-size: 3rem; }
+        #about-me .container .content-info .social-icons a {
+          padding-right: 1rem; }
     #about-me .container .profile-pic {
       flex: 1;
       margin-top: -5rem; }
 
-.category1 {
-  top: 0;
-  left: 0; }
-
-.category2 {
-  top: 0;
-  left: 25%; }
-
-.category3 {
-  top: 0;
-  left: 50%; }
-
-.category4 {
-  top: 0;
-  left: 75%; }
-
 #capabilities {
-  height: 400px;
+  height: 100%;
   margin-bottom: 4.5rem; }
   #capabilities .capabilities-container {
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap; }
     #capabilities .capabilities-container .category {
       display: flex;
-      flex-direction: column;
       flex: 1;
-      display: flex;
+      padding: 1rem;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      min-width: 10rem; }
       #capabilities .capabilities-container .category .content {
         display: flex;
         flex-direction: column;
@@ -304,7 +296,6 @@ img {
           height: 12rem;
           width: auto;
           display: block;
-          margin: auto;
           margin-bottom: 4rem;
           opacity: 0.4;
           transition: 0.75s; }
@@ -371,10 +362,12 @@ img {
   opacity: 0.3;
   cursor: pointer; }
 
-#portfolio p {
-  color: grey;
-  font-size: 12px;
-  font-weight: 200; }
+#portfolio-section {
+  margin-bottom: 5rem; }
+  #portfolio-section p {
+    color: grey;
+    font-size: 12px;
+    font-weight: 200; }
 
 .content {
   width: 100%;
@@ -482,8 +475,7 @@ img {
   display: block; }
 
 #bottom-footer {
-  height: 250px;
-  padding-top: 2rem; }
+  height: 250px; }
   #bottom-footer .contact-info {
     display: flex;
     flex-direction: column;
@@ -492,3 +484,7 @@ img {
     height: 100%; }
     #bottom-footer .contact-info a {
       color: white; }
+    #bottom-footer .contact-info .social-icons {
+      font-size: 3rem; }
+      #bottom-footer .contact-info .social-icons a {
+        padding: 1rem; }

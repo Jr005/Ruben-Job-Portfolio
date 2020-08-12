@@ -78,7 +78,7 @@ input[class^="btn-"]:hover {
 
 .lead {
   font-size: 1.3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .text-center {
@@ -200,7 +200,9 @@ input[class^="btn-"]:hover {
     position: absolute;
     right: 0;
     z-index: -1;
-    -webkit-backface-visibility: hidden; // for Chrome Windows
+    -webkit-backface-visibility: hidden;
+    padding-bottom: 2rem;
+    // for Chrome Windows
   }
 
   &:before {
