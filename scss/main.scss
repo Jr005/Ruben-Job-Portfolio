@@ -48,37 +48,107 @@ img {
 }
 
 // Main Nav
-#main-nav {
-  z-index: 20;
+// #main-nav {
+//   z-index: 20;
+//   display: flex;
+//   justify-content: space-between;
+//   padding-top: 1rem;
+//   background: none;
+//   position: relative;
+
+//   ul {
+//     display: flex;
+//   }
+
+//   li {
+//     padding: 1rem 1.5rem;
+//   }
+
+//   a {
+//     text-decoration: none;
+//     color: #fff;
+//     text-transform: uppercase;
+//     // CSS Below is For Border Bottom Hover Effect
+//     border-bottom: 3px transparent solid;
+//     padding-bottom: 0.5rem;
+//     transition: border-color 1s;
+
+//     &:hover {
+//       border-color: $light-blue;
+//     }
+
+//     &.current {
+//       border-color: $yellow-color;
+//     }
+//   }
+// }
+
+// Flexbox Navbar
+
+.nav-container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+// Flexbox Navbar
+.nav-wrapper-flex {
+  width: 95%;
+  height: 50px;
+  margin: 20px auto;
+  background: black;
   display: flex;
   justify-content: space-between;
-  padding-top: 1rem;
-  background: none;
-  position: relative;
+  align-items: center;
+  color: white;
+}
 
-  ul {
-    display: flex;
+#mobile-menu {
+  display: none;
+  margin-right: 20px;
+  cursor: pointer;
+  @media screen and (max-width: 600px) {
+    display: block;
   }
+}
 
-  li {
-    padding: 1rem 1.5rem;
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  margin-right: 25px;
+  cursor: pointer;
+  @media screen and (max-width: 600px) {
+    display: none;
   }
-
-  a {
-    text-decoration: none;
-    color: #fff;
+  li a {
+    position: relative;
+    margin-left: 15px;
     text-transform: uppercase;
-    // CSS Below is For Border Bottom Hover Effect
-    border-bottom: 3px transparent solid;
-    padding-bottom: 0.5rem;
-    transition: border-color 1s;
-
-    &:hover {
-      border-color: $light-blue;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: white;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 2px;
+      top: 110%;
+      left: 0;
+      background: white;
+      transition: transform 0.5s;
+      transform: scaleX(0);
+      transform-origin: right;
     }
-
-    &.current {
-      border-color: $yellow-color;
+    &:hover::after {
+      transform: scale(1);
+      transform-origin: left;
     }
   }
 }
