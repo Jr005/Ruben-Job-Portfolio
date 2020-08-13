@@ -277,43 +277,44 @@ img {
   margin-bottom: 4.5rem; }
   #capabilities .capabilities-container {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: space-between; }
     #capabilities .capabilities-container .category {
       display: flex;
-      flex: 1;
-      padding: 1rem;
+      flex: 1 1 100%;
       align-items: center;
       justify-content: center;
-      min-width: 10rem; }
+      margin-bottom: 4rem; }
+      @media screen and (min-width: 768px) {
+        #capabilities .capabilities-container .category {
+          flex: 0 0 50%; } }
+      @media screen and (min-width: 1025px) {
+        #capabilities .capabilities-container .category {
+          flex: 0 0 25%; } }
       #capabilities .capabilities-container .category .content {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center; }
+        justify-content: space-between;
+        height: 100%; }
         #capabilities .capabilities-container .category .content img {
-          position: absolute;
-          top: 30%;
           height: 12rem;
           width: auto;
           display: block;
-          margin-bottom: 4rem;
+          object-fit: contain;
           opacity: 0.4;
-          transition: 0.75s; }
+          transition: 0.75s;
+          padding-bottom: 4rem; }
         #capabilities .capabilities-container .category .content .text-animation {
           text-align: center;
-          padding-top: 15rem;
-          transition-duration: 0.75s;
-          text-align: center;
-          left: 0;
-          right: 0; }
+          transition-duration: 0.75s; }
           #capabilities .capabilities-container .category .content .text-animation h3 {
             color: white;
             text-transform: uppercase; }
     #capabilities .capabilities-container .category:hover .content img {
-      opacity: 1;
-      margin-bottom: 1rem; }
+      opacity: 1; }
     #capabilities .capabilities-container .category:hover .content .text-animation {
-      padding-top: 10rem; }
+      transform: translateY(-2rem); }
 
 #skills {
   margin-bottom: 5rem; }
