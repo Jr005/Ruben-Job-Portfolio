@@ -71,7 +71,7 @@ img {
   .menu-dropdown {
     display: none;
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 1024px) {
       display: block;
       height: 70px;
       width: 70px;
@@ -222,7 +222,7 @@ img {
     list-style-type: none;
     // margin-right: 25px;
     cursor: pointer;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 1024px) {
       display: none;
     }
   }
@@ -677,5 +677,44 @@ img {
         padding: 1rem;
       }
     }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #header-home {
+    margin-bottom: 4rem;
+  }
+
+  #about-me {
+    margin-bottom: 4rem;
+
+    .container {
+      display: flex;
+      overflow: visible;
+      flex-direction: column-reverse;
+      justify-content: center;
+
+      .content-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 5rem;
+        width: 90%;
+        margin: auto;
+      }
+
+      .profile-pic {
+        display: flex;
+        justify-content: center;
+        img {
+          width: 60%;
+        }
+      }
+    }
+  }
+
+  #capabilities {
+    height: 100%;
+    margin-bottom: 3rem;
   }
 }
