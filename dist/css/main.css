@@ -630,4 +630,17 @@ img {
           width: 60%; }
   #capabilities {
     height: 100%;
-    margin-bottom: 3rem; } }
+    margin-bottom: 3rem; }
+  #portfolio-section .lightbox img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-top: 20%; }
+  #portfolio-section .lightbox-websites .image-button-container {
+    width: 75%;
+    margin: 2% auto;
+    display: block;
+    overflow: auto;
+    max-height: 80%;
+    position: relative;
+    top: 15%; } }
