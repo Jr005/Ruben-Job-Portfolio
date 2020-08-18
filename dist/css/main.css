@@ -231,7 +231,8 @@ img {
   height: 100vh;
   margin: 0;
   background: #00111e;
-  z-index: 1; }
+  z-index: 1;
+  position: relative; }
   #header-home .bottom-curve {
     position: absolute;
     bottom: -40px;
@@ -239,7 +240,7 @@ img {
   #header-home #particles-js {
     position: absolute;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     top: 0;
     z-index: 0 !important; }
   #header-home .container .header-content {
@@ -265,7 +266,8 @@ img {
 #about-me {
   margin-top: -3rem;
   position: relative;
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+  z-index: 10; }
   #about-me .container {
     display: flex;
     overflow: visible; }
