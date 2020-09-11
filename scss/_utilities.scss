@@ -25,8 +25,10 @@
 
   &-light {
     @extend %btn-shared; // Brings styles from BTN Shared
-    color: #333;
-    background-color: $light-blue;
+    color: white;
+    background-color: rgba(0, 95, 86, 0.3);
+    border: 2px solid white;
+    border-radius: 10px;
   }
 
   &-dark {

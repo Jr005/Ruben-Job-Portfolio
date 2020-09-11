@@ -16,8 +16,10 @@
   background-color: #d9b311; }
 
 .btn-light {
-  color: #333;
-  background-color: #0080A7; }
+  color: white;
+  background-color: rgba(0, 95, 86, 0.3);
+  border: 2px solid white;
+  border-radius: 10px; }
 
 .btn-dark {
   color: #f4f4f4;
@@ -203,7 +205,6 @@ img {
   z-index: 20;
   display: flex;
   justify-content: space-between;
-  padding-top: 1rem;
   background: none;
   position: relative; }
   #main-nav .nav-links {
@@ -228,11 +229,12 @@ img {
       border-color: #d9b311; }
 
 #header-home {
+  background: #333 url("../img/header-images/ruben123-hero-img_02.jpg") no-repeat center/cover;
   height: 100vh;
   margin: 0;
-  background: #00111e;
   z-index: 1;
-  position: relative; }
+  position: relative;
+  margin-bottom: 2rem; }
   #header-home .bottom-curve {
     position: absolute;
     bottom: -40px;
@@ -249,15 +251,20 @@ img {
     text-align: center;
     justify-content: center;
     align-items: center;
-    height: 100%;
     position: absolute;
     color: white;
     text-align: center;
     left: 0;
     right: 0;
-    bottom: 0;
+    padding-top: 1rem;
     /* let's shape */
     /* let's animate this */ }
+    #header-home .container .header-content h2 {
+      z-index: 2;
+      margin-bottom: 1.5rem; }
+    #header-home .container .header-content img {
+      margin-top: -8rem;
+      margin-bottom: -7rem; }
     #header-home .container .header-content .wrap {
       height: 60px;
       top: 50%;
@@ -266,182 +273,30 @@ img {
     #header-home .container .header-content .box {
       padding: 1em;
       height: 60px;
-      text-align: center; }
+      margin: auto;
+      position: relative; }
     #header-home .container .header-content button {
-      width: 160px;
-      height: 60px;
-      background: #e6203b;
+      width: 180px;
+      height: 50px;
+      background-color: rgba(0, 95, 86, 0.3);
+      border: 2px solid white;
       cursor: pointer;
       position: relative;
-      border-radius: 6px; }
+      border-radius: 10px;
+      transition-delay: 1s; }
+    #header-home .container .header-content button:hover {
+      background-color: #d9b311; }
     #header-home .container .header-content button a {
       color: #fff;
       text-transform: uppercase;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      z-index: 5; }
     #header-home .container .header-content button span.shape {
       height: 60px;
       width: 160px;
       position: absolute;
       top: 0;
       left: 0; }
-    #header-home .container .header-content button span span {
-      content: "";
-      position: absolute;
-      margin: auto;
-      height: 8px;
-      width: 2px;
-      background: #e6203b;
-      opacity: 0; }
-    #header-home .container .header-content button span span:nth-of-type(1) {
-      top: -20px;
-      left: 0;
-      right: 0; }
-    #header-home .container .header-content button span span:nth-of-type(2) {
-      bottom: -20px;
-      left: 0;
-      right: 0; }
-    #header-home .container .header-content button span span:nth-of-type(3) {
-      top: 0;
-      bottom: 0;
-      left: -10px; }
-    #header-home .container .header-content button span span:nth-of-type(4) {
-      top: 0;
-      bottom: 0;
-      right: -10px; }
-    #header-home .container .header-content button span span:nth-of-type(5) {
-      top: -20px;
-      left: -70%;
-      right: 0;
-      transform: rotate(-30deg); }
-    #header-home .container .header-content button span span:nth-of-type(6) {
-      top: -20px;
-      left: 0;
-      right: -70%;
-      transform: rotate(30deg); }
-    #header-home .container .header-content button span span:nth-of-type(7) {
-      bottom: -20px;
-      right: 0;
-      left: -70%;
-      transform: rotate(30deg); }
-    #header-home .container .header-content button span span:nth-of-type(8) {
-      bottom: -20px;
-      left: 0;
-      right: -70%;
-      transform: rotate(-30deg); }
-
-@keyframes bounce {
-  0% {
-    transform: scale(1); }
-  50% {
-    transform: scale(1.1); }
-  100% {
-    transform: scale(1); } }
-    #header-home .container .header-content button.active {
-      animation: bounce 0.3s ease-out 1; }
-    #header-home .container .header-content button.active span span:nth-of-type(1) {
-      animation: anim1 0.4s ease-out 1; }
-    #header-home .container .header-content button.active span span:nth-of-type(2) {
-      animation: anim2 0.4s ease-out 1; }
-    #header-home .container .header-content button.active span span:nth-of-type(3) {
-      animation: anim3 0.4s ease-out 1; }
-    #header-home .container .header-content button.active span span:nth-of-type(4) {
-      animation: anim4 0.4s ease-out 1; }
-    #header-home .container .header-content button.active span span:nth-of-type(5) {
-      animation: anim5 0.4s ease-out 1; }
-    #header-home .container .header-content button.active span span:nth-of-type(6) {
-      animation: anim6 0.4s ease-out 1; }
-    #header-home .container .header-content button.active span span:nth-of-type(7) {
-      animation: anim7 0.4s ease-out 1; }
-    #header-home .container .header-content button.active span span:nth-of-type(8) {
-      animation: anim8 0.4s ease-out 1; }
-
-@keyframes anim1 {
-  0% {
-    transform: scaleY(0.5);
-    opacity: 0; }
-  50% {
-    transform: translateY(-10px) scaleY(1.4);
-    opacity: 1; }
-  100% {
-    transform: translateY(-20px) scaleY(0.5);
-    opacity: 0; } }
-
-@keyframes anim2 {
-  0% {
-    transform: scaleY(1);
-    opacity: 0; }
-  50% {
-    transform: translateY(10px) scaleY(1.4);
-    opacity: 1; }
-  100% {
-    transform: translateY(20px) scaleY(0.5);
-    opacity: 0; } }
-
-@keyframes anim3 {
-  0% {
-    transform: rotate(90deg) scaleX(0.5);
-    opacity: 0; }
-  50% {
-    transform: rotate(90deg) translateY(10px) scaleX(1.4);
-    opacity: 1; }
-  100% {
-    transform: rotate(90deg) translateY(20px) scaleX(0.5);
-    opacity: 0; } }
-
-@keyframes anim4 {
-  0% {
-    transform: rotate(90deg) scaleX(0.5);
-    opacity: 0; }
-  50% {
-    transform: rotate(90deg) translateY(-10px) scaleX(1.4);
-    opacity: 1; }
-  100% {
-    transform: rotate(90deg) translateY(-20px) scaleX(0.5);
-    opacity: 0; } }
-
-@keyframes anim5 {
-  0% {
-    transform: rotate(-30deg) scaleY(0.5);
-    opacity: 0; }
-  50% {
-    transform: rotate(-30deg) translateY(-8px) scaleY(1.4);
-    opacity: 1; }
-  100% {
-    transform: rotate(-30deg) translateY(-16px) scaleY(0.5);
-    opacity: 0; } }
-
-@keyframes anim6 {
-  0% {
-    transform: rotate(30deg) scaleY(0.5);
-    opacity: 0; }
-  50% {
-    transform: rotate(30deg) translateY(-8px) scaleY(1.4);
-    opacity: 1; }
-  100% {
-    transform: rotate(30deg) translateY(-16px) scaleY(0.5);
-    opacity: 0; } }
-
-@keyframes anim7 {
-  0% {
-    transform: rotate(30deg) scaleY(0.5);
-    opacity: 0; }
-  50% {
-    transform: rotate(30deg) translateY(8px) scaleY(1.4);
-    opacity: 1; }
-  100% {
-    transform: rotate(30deg) translateY(16px) scaleY(0.5);
-    opacity: 0; } }
-
-@keyframes anim8 {
-  0% {
-    transform: rotate(-30deg) scaleY(0.5);
-    opacity: 0; }
-  50% {
-    transform: rotate(-30deg) translateY(8px) scaleY(1.4);
-    opacity: 1; }
-  100% {
-    transform: rotate(-30deg) translateY(16px) scaleY(0.5);
-    opacity: 0; } }
     #header-home .container .header-content h1 {
       font-size: 125px;
       line-height: 0.8;
@@ -452,7 +307,6 @@ img {
       margin-bottom: 2rem; }
 
 #about-me {
-  margin-top: -3rem;
   position: relative;
   margin-bottom: 5rem;
   z-index: 10; }
@@ -807,9 +661,7 @@ img {
     .menu-dropdown .hidden {
       display: none; }
   #header-home {
-    background: #333 url("img/header-images/ruben123-hero-img_02.jpg") no-repeat center/cover;
-    height: 100vh;
-    color: #fff; }
+    margin-bottom: 4rem; }
   #about-me {
     margin-bottom: 4rem; }
     #about-me .container {
