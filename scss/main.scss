@@ -412,7 +412,7 @@ img {
 
       h1 {
         font-size: 125px;
-        line-height: 0.9;
+        line-height: 0.8;
         font-family: "Abril Fatface", cursive;
 
         // text-shadow:  0 0 10px #fff ;
@@ -421,6 +421,10 @@ img {
         // text-shadow: 0 0 5px #fff, 0 0 15px;
         // #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 35px #fff;
         margin-bottom: 0.75rem;
+      }
+
+      p {
+        margin-bottom: 2rem;
       }
     }
   }
@@ -967,7 +971,11 @@ img {
   // MENU DROPDOWN CIRCLE - END
 
   #header-home {
-    margin-bottom: 4rem;
+    background: #333 url("img/header-images/ruben123-hero-img_02.jpg") no-repeat
+      center/cover;
+    height: 100vh;
+    color: #fff;
+    // margin-bottom: 4rem;
   }
 
   #about-me {
