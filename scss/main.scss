@@ -500,7 +500,11 @@ img {
 
     .profile-pic {
       flex: 1;
-      margin-top: -5rem;
+      margin-top: -3rem;
+
+      img {
+        border-radius: 50%;
+      }
     }
   }
 }

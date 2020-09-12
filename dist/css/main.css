@@ -331,7 +331,9 @@ img {
         color: #0080A7; }
     #about-me .container .profile-pic {
       flex: 1;
-      margin-top: -5rem; }
+      margin-top: -3rem; }
+      #about-me .container .profile-pic img {
+        border-radius: 50%; }
 
 #capabilities {
   height: 100%;
