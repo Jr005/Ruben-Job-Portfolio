@@ -112,7 +112,7 @@ img {
 #header-home {
   background: #333 url("../img/header-images/ruben123-hero-img_02.jpg")
     no-repeat center/cover;
-  height: 100vh;
+  height: 95vh;
   margin: 0;
   // background: $dark-blue;
   z-index: 1;
@@ -127,12 +127,15 @@ img {
   }
 
   #particles-js {
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     // background: $dark-blue;
-    top: 0;
-    z-index: 0 !important;
+    bottom: 0;
+    z-index: 1 !important;
+
+    -webkit-mask-image: linear-gradient(to bottom, transparent 70%, black 75%);
+    mask-image: linear-gradient(to bottom, transparent 70%, black 100%);
   }
 
   .container {
@@ -154,6 +157,11 @@ img {
       right: 0;
       padding-top: 1rem;
       // bottom: 0;
+
+      .work-button {
+        z-index: 20;
+        position: relative;
+      }
 
       h2 {
         z-index: 2;
@@ -915,7 +923,7 @@ img {
 
   #header-home .container .header-content {
     // bottom: 0;
-    margin-top: 10rem;
+    // margin-top: 10rem;
     z-index: 1;
     position: relative;
 
@@ -1146,4 +1154,28 @@ img {
   }
 
   // end
+}
+
+@media screen and (min-height: 1366px) {
+  // HEADER IMAGE & CONTENT
+
+  #header-home .container .header-content {
+    // bottom: 0;
+    margin-top: 10rem;
+    z-index: 1;
+    position: relative;
+
+    h2 {
+      z-index: 2;
+      margin-bottom: 1.5rem;
+    }
+
+    img {
+      margin-top: -5rem;
+      margin-bottom: -4rem;
+      width: 1200px;
+      // padding: 1rem;
+      z-index: 0;
+    }
+  }
 }
