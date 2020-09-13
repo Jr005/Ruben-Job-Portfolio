@@ -547,7 +547,10 @@ img {
     align-items: center;
     height: 100%; }
     #bottom-footer .contact-info a {
-      color: white; }
+      color: white;
+      transition: color 0.5s; }
+    #bottom-footer .contact-info a:hover {
+      color: #d9b311; }
     #bottom-footer .contact-info .social-icons {
       font-size: 3rem; }
       #bottom-footer .contact-info .social-icons a {

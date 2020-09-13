@@ -833,6 +833,11 @@ img {
     // bottom: 0;
     a {
       color: white;
+      transition: color 0.5s;
+    }
+    a:hover {
+      color: $yellow-color;
+      // transition-delay: 0.25s;
     }
 
     // social icons
