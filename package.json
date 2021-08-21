@@ -11,5 +11,15 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "node-sass": "^4.14.1"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://jr005:texas13new@github.com/Jr005/ruben-job-portfolio.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Jr005/ruben-job-portfolio/issues"
+  },
+  "homepage": "https://github.com/Jr005/ruben-job-portfolio#readme"
 }
